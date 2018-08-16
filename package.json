@@ -5,11 +5,10 @@
   "author": "Shahzada Khoso",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "dev-server": "webpack-dev-server",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
-    "test": "jest --config=jest.config.json", 
+    "test": "jest --config=jest.config.json",
     "start": "node server/server.js",
     "heroku-postbuild": "yarn run build:prod"
   },
@@ -22,13 +21,8 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "^0.28.11",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "enzyme-to-json": "^3.3.4",
     "express": "^4.16.3",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "jest": "^23.4.2",
-    "live-server": "^1.2.0",
     "moment": "^2.22.2",
     "node-sass": "^4.9.0",
     "normalize.css": "^8.0.0",
@@ -39,18 +33,23 @@
     "react-modal": "^3.4.5",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
-    "react-test-renderer": "^16.4.2",
     "redux": "^4.0.0",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
     "uuid": "^3.3.2",
     "validator": "^10.3.0",
-    "webpack": "^4.12.0",
-    "webpack-dev-server": "^3.1.4"
+    "webpack": "^4.12.0"
   },
   "devDependencies": {
     "babel-jest": "^23.4.2",
+    "chalk": "^2.4.1",
     "regenerator-runtime": "^0.12.0",
-    "webpack-cli": "^3.0.7"
+    "react-test-renderer": "^16.4.2",
+    "webpack-cli": "^3.0.7", 
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "jest": "^23.4.2",
+    "webpack-dev-server": "^3.1.4"
   }
 }
